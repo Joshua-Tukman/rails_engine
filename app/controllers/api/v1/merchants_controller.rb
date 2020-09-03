@@ -18,10 +18,9 @@ class Api::V1::MerchantsController < ApplicationController
   end
 
   def destroy
-
     MerchantSerializer.new(Merchant.delete(params[:id]))
   end
-
+  
   private
 
   def merchant_params
